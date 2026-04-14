@@ -26,15 +26,7 @@ public class GeneradorReportesApplication implements CommandLineRunner {
     }
 
     @Override
-    public void run(String... args) {
-        LocalDate fechaLimite = LocalDate.of(2025, 12, 29);
-        LocalDate hoy = LocalDate.now();
-
-        if (hoy.isAfter(fechaLimite)) {
-            System.out.println("La fecha límite para ejecutar ha expirado. No se generará el reporte.");
-            return;
-        }
-
+    public void run(String... args) {       
         if (args.length > 0) {
         //if (true){
             try {
